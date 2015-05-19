@@ -30,7 +30,7 @@ angular.module('sample', [
   'adf.widget.github', 'adf.widget.version',
   'adf.widget.clock', 'LocalStorageModule',
   'sample-01', 'sample-02', 'sample-03',
-  'sample-04', 'ngRoute'
+  'sample-04', 'ngRoute', 'angular.vertilize'
 ])
 .config(function(dashboardProvider, $routeProvider, localStorageServiceProvider){
   dashboardProvider.widgetsPath('widgets/');

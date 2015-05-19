@@ -54,24 +54,6 @@ angular.module('sample-01', ['adf', 'LocalStorageModule'])
                                 }]
                             },
                             title: "Links"
-                        }, {
-                            type: "weather",
-                            config: {
-                                location: "Hildesheim"
-                            },
-                            title: "Weather Hildesheim"
-                        }, {
-                            type: "weather",
-                            config: {
-                                location: "Edinburgh"
-                            },
-                            title: "Weather"
-                        }, {
-                            type: "weather",
-                            config: {
-                                location: "Dublin,IE"
-                            },
-                            title: "Weather"
                         }]
                     }, {
                         styleClass: "col-md-8",
@@ -94,7 +76,7 @@ angular.module('sample-01', ['adf', 'LocalStorageModule'])
         $scope.model = model;
         $scope.collapsible = false;
         $scope.maximizable = false;
-        $scope.displaytitle = false;
+        $scope.displaytitle = true;
 
         $scope.$on('adfDashboardChanged', function (event, name, model) {
             localStorageService.set(name, model);
